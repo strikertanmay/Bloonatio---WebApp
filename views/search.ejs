@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
+  <meta name="author" content="Creative Tim">
+  <title> Bloodonatzo - Search</title>
+  <!-- Favicon -->
+  <link href="../assets/img/brand/favicon.png" rel="icon" type="image/png">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <!-- Icons -->
+  <link href="../assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
+  <link href="../assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <!-- Argon CSS -->
+  <link type="text/css" href="../assets/css/argonlogin.css?v=1.0.0" rel="stylesheet">
+
+</head>
+
+<body class="bg-default">
+  <div class="main-content">
+    <!-- Navbar -->
+    <nav class="navbar navbar-top navbar-horizontal navbar-expand-md navbar-dark">
+      <div class="container px-4">
+        <a class="navbar-brand" href="/index">
+          <img src="../assets/img/brand/white.png" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-main"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-collapse-main">
+          <!-- Collapse header -->
+          <div class="navbar-collapse-header d-md-none">
+            <div class="row">
+              <div class="col-6 collapse-brand">
+                <a href="/index">
+                  <img src="../assets/img/brand/white.png">
+                </a>
+              </div>
+              <div class="col-6 collapse-close">
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse-main"
+                  aria-controls="sidenav-main" aria-expanded="false" aria-label="Toggle sidenav">
+                  <span></span>
+                  <span></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Navbar items -->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link nav-link-icon" href="../examples/home.html">
+                <i class="fas fa-home"></i>
+                <span class="nav-link-inner--text" style="margin-right: -50px ">Home</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Header -->
+    <div class="header bg-gradient-primary py-7 py-lg-8">
+      <div class="container">
+        <div class="header-body text-center mb-7" style="margin-left: 120px">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-6">
+              <h1 class="text-white" style="margin-bottom: 60px; margin-right: 90px
+              ">Welcome User!</h1>
+              <!-- <p class="text-lead text-light">Use these awesome forms to login or create new account in your project for free.</p> -->
+            </div>
+          </div>
+          <form action="/search" method="POST">
+          <div class="row justify-content-center" style="margin-right: 70px">
+            <div class="col-lg-6 col-md-6">
+              <select class="form-control form-control-lg" name="bgroup" aria-placeholder="Blood Group">
+                <option value="" disabled selected>Select Blood Group</option>
+                  <option value="O+">O+</option>
+                  <option value="O-">O-</option>
+                  <option value="B+">B+</option>
+                  <option value="B-">B-</option>
+                  <option value="A+">A+</option>
+                  <option value="A-">A-</option>
+                  <option value="AB+">AB+</option>
+                  <option value="AB-">AB-</option>
+                  <option value="A1+">A1+</option>
+                  <option value="A1-">A1-</option>
+                  <option value="A1B+">A1B+</option>
+                  <option value="A1B-">A1B-</option>
+                  <option value="A2+">A2+</option>
+                  <option value="A2-">A2-</option>
+                  <option value="A2B+">A2B+</option>
+                  <option value="A2B-">A2B-</option>
+              </select>
+              <!-- <h1 class="text-white">Welcome!</h1>
+              <p class="text-lead text-light">Use these awesome forms to login or create new account in your project for free.</p> -->
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <select class="form-control form-control-lg" name="city" aria-placeholder="City">
+                <option value="" disabled selected>Select City</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Pune">Pune</option>
+                <option value="Jaipur">Jaipur</option>
+                <option value="Amritsar">Amritsar</option>
+                <option value="Banglore">Banglore</option>
+              </select>
+              <!-- <h1 class="text-white">Welcome!</h1>
+                          <p class="text-lead text-light">Use these awesome forms to login or create new account in your project for free.</p> -->
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-3" style="margin-top: 70px; margin-left:180px">
+            <input class="btn btn-primary btn-lg btn-block" type="submit" value="Submit">
+
+          </div>
+          </form>
+        </div>
+      </div>
+      <div class="separator separator-bottom separator-skew zindex-100">
+        <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <polygon class="fill-default" points="2560 0 2560 100 0 100"></polygon>
+        </svg>
+      </div>
+    </div>
+    <div class="container mt--8 pb-5">
+      <div class="row">
+        <div class="col">
+          <div class="card shadow">
+            <div class="card-header border-0">
+              <h3 class="mb-0" style="float: left;padding-top: 5px">Search Results</h3>
+              <div class="btn-group" style="float: right">
+                <button type="button" class="btn btn-danger">Sort By</button>
+                <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">City</a>
+                  <a class="dropdown-item" href="#">Quantity</a>
+                  <a class="dropdown-item" href="#">Time</a>
+                </div>
+              </div>
+            </div>
+            <div class="table-responsive">
+              <table class="table align-items-center table-flush">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col">City</th>
+                    <th scope="col">Blood Bank</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Contact No.</th>
+                    <th scope="col">Date-Time</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">
+                      <div class="media align-items-center">
+                        <a href="#" class="avatar rounded-circle mr-3">
+                          <img alt="Image placeholder" src="../assets/drop.jpg">
+                        </a>
+                        <div class="media-body">
+                          <span class="mb-0 text-sm">City</span>
+                        </div>
+                      </div>
+                    </th>
+                    <td>
+                      Blood Bank
+                    </td>
+                    <td>
+                      Quantity
+                    </td>
+                    <td>
+                      Contact No.
+                    </td>
+                    <td>
+                      Date-Time
+                    </td>
+
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="card-footer py-4">
+              <nav aria-label="...">
+                <ul class="pagination justify-content-end mb-0">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1">
+                      <i class="fas fa-angle-left"></i>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                  </li>
+                  <li class="page-item active">
+                    <a class="page-link" href="#">1</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">
+                      <i class="fas fa-angle-right"></i>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Argon JS -->
+  <script src="../assets/js/argon.js?v=1.0.0"></script>
+</body>
+
+</html>
