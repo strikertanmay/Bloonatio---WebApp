@@ -8,7 +8,7 @@ var urlEncodedParser = bodyParser.urlencoded({ extended: false });
 app.set('view engine', 'ejs');
 //Database
 var MongoClient = require('mongodb').MongoClient;
-var url = "mongodb://localhost:27017/bloonatio"
+var url = "mongodb://localhost:27017/users"
 //Static files
 app.use('/assets', express.static(__dirname + '/assets'));
 
