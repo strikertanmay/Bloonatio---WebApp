@@ -465,7 +465,7 @@ app.post('/search', urlEncodedParser, function (req, res) {
 
 //Initiate App
 
-var server = app.listen(process.env.PORT || '3000', function () {
+var server = app.listen(process.env.PORT || '8080', function () {
   console.log('App listening on port %s', server.address().port);
   console.log('Press Ctrl+C to quit.');
 });
