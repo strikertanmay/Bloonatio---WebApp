@@ -19,8 +19,14 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "cookie-session": "^2.0.0-beta.3",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
-    "mongodb": "^3.1.8"
+    "formidable": "^1.2.1",
+    "fs": "0.0.1-security",
+    "mongodb": "^3.1.8",
+    "mongoose": "^5.4.3",
+    "passport": "^0.4.0",
+    "passport-custom": "^1.0.5"
   }
 }

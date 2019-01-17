@@ -48,13 +48,13 @@
           <!-- Navbar items -->
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link nav-link-icon" href="/register">
+              <a class="nav-link nav-link-icon" href="/auth/register">
                 <i class="ni ni-circle-08"></i>
                 <span class="nav-link-inner--text">Register</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-link-icon" href="/login">
+              <a class="nav-link nav-link-icon" href="/auth/login">
                 <i class="ni ni-key-25"></i>
                 <span class="nav-link-inner--text">Login</span>
               </a>
@@ -89,11 +89,11 @@
             <div class="card-header bg-transparent pb-5">
               <div class="text-muted text-center mt-2 mb-3"><small>LOGIN</small></div>
               <div class="btn-wrapper text-center">
-                <a href="/register" class="btn btn-neutral btn-icon">
+                <a href="/auth/register" class="btn btn-neutral btn-icon">
                   <span class="btn-inner--icon"><img src="../assets/img/icons/common/user.svg"></span>
                   <span class="btn-inner--text">REGISTER</span>
                 </a>
-                <a href="/login" class="btn btn-neutral btn-icon">
+                <a href="/auth/login" class="btn btn-neutral btn-icon">
                   <span class="btn-inner--icon"><img src="../assets/img/icons/common/key.svg"></span>
                   <span class="btn-inner--text">LOGIN</span>
                 </a>
@@ -103,13 +103,13 @@
               <div class="text-center text-muted mb-4">
                 <small>Or sign in with credentials</small>
               </div>
-              <form role="form" method="post" action="/login">
+              <form role="form" method="post" action="/auth/login">
                 <div class="form-group mb-3">
                   <div class="input-group input-group-alternative">
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="ni ni-email-83"></i></span>
                     </div>
-                    <input class="form-control" placeholder="username" type="text" name="uname">
+                    <input class="form-control" placeholder="username" type="text" name="username">
                   </div>
                 </div>
                 <div class="form-group">
@@ -117,7 +117,7 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
                     </div>
-                    <input class="form-control" placeholder="Password" type="password" name="pass">
+                    <input class="form-control" placeholder="Password" type="password" name="password">
                   </div>
                 </div>
                 <div class="custom-control custom-control-alternative custom-checkbox">
@@ -137,7 +137,7 @@
               <a href="#" class="text-light"><small>Forgot password?</small></a>
             </div>
             <div class="col-6 text-right">
-              <a href="../examples/register.html" class="text-light"><small>Create new account</small></a>
+              <a href="../examples/auth/register.html" class="text-light"><small>Create new account</small></a>
             </div>
           </div>
         </div>
